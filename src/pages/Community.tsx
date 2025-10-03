@@ -2,31 +2,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, PenTool, MessageSquare, Trophy } from "lucide-react";
+import { PenTool } from "lucide-react";
 
 const Community = () => {
-  const features = [
-    {
-      icon: <PenTool className="w-12 h-12 text-accent" />,
-      title: "Publish Your Work",
-      description: "Share your AI projects, research, and tutorials with the community. Get feedback and recognition.",
-    },
-    {
-      icon: <Users className="w-12 h-12 text-accent" />,
-      title: "Collaboration Hub",
-      description: "Find teammates for projects, join hackathons, and participate in collaborative initiatives.",
-    },
-    {
-      icon: <MessageSquare className="w-12 h-12 text-accent" />,
-      title: "Discussion Forums",
-      description: "Ask questions, share knowledge, and engage in AI-focused discussions with experts and peers.",
-    },
-    {
-      icon: <Trophy className="w-12 h-12 text-accent" />,
-      title: "Gamification & Rewards",
-      description: "Earn badges, points, and recognition for your contributions to the community.",
-    },
-  ];
+  const feature = {
+    icon: <PenTool className="w-12 h-12 text-accent" />,
+    title: "Share Your Work",
+    description: "Share your AI projects, research, and tutorials with the community.",
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -43,23 +26,30 @@ const Community = () => {
           </div>
         </section>
 
-        {/* Features */}
+        {/* Feature */}
         <section className="py-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              {features.map((feature, index) => (
-                <Card key={index} className="shadow-smooth hover:shadow-lg transition-smooth border-2 hover:border-accent">
-                  <CardHeader>
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-secondary rounded-lg">{feature.icon}</div>
-                      <div>
-                        <CardTitle className="text-xl mb-2">{feature.title}</CardTitle>
-                        <CardDescription className="text-base">{feature.description}</CardDescription>
-                      </div>
+            <div className="max-w-2xl mx-auto">
+              <Card className="shadow-smooth hover:shadow-lg transition-smooth border-2 hover:border-accent">
+                <CardHeader>
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-secondary rounded-lg">{feature.icon}</div>
+                    <div className="flex-1">
+                      <CardTitle className="text-xl mb-2">{feature.title}</CardTitle>
+                      <CardDescription className="text-base mb-4">{feature.description}</CardDescription>
+                      <a
+                        href="https://wa.me/919959100901?text=Hello!%20I%20would%20like%20to%20share%20my%20AI%20work%20on%20WisdomCore.ai."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Button variant="cta" className="w-full sm:w-auto">
+                          Get Started
+                        </Button>
+                      </a>
                     </div>
-                  </CardHeader>
-                </Card>
-              ))}
+                  </div>
+                </CardHeader>
+              </Card>
             </div>
           </div>
         </section>
