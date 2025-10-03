@@ -9,13 +9,13 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* WisdomCore.ai Brand Colors - Teal Palette */
-    --background: 180 25% 97%;
+    --background: 184 50% 92%;
     --foreground: 180 62% 25%;
 
-    --card: 0 0% 100%;
+    --card: 180 40% 96%;
     --card-foreground: 180 62% 25%;
 
-    --popover: 0 0% 100%;
+    --popover: 180 40% 96%;
     --popover-foreground: 180 62% 25%;
 
     /* Dark Teal - Primary brand color */
