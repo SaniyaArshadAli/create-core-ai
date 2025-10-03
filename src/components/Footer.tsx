@@ -107,6 +107,14 @@ const Footer = () => {
             <Link to="/terms" className="hover:text-hover transition-smooth">
               Terms of Service
             </Link>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxHAm7wVCaY_TJHlAMK75K27IYzYQQVXVOJtxvy38hxtwrpA/viewform?usp=header" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-hover transition-smooth"
+            >
+              Feedback & Payment
+            </a>
           </div>
         </div>
       </div>
