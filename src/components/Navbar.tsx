@@ -1,0 +1,86 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    { name: "Projects", path: "/projects" },
+    { name: "Services", path: "/services" },
+    { name: "Community", path: "/community" },
+    { name: "About", path: "/about" },
+  ];
+
+  return (
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logo} alt="WisdomCore.ai" className="h-10 w-10" />
+            <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
+              WisdomCore.ai
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-1">
+            {navLinks.map((link) => (
+              <Link key={link.name} to={link.path}>
+                <Button variant="ghost" className="text-base">
+                  {link.name}
+                </Button>
+              </Link>
+            ))}
+            <a
+              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="cta" className="ml-4">
+                Get Started
+              </Button>
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 rounded-lg hover:bg-secondary transition-smooth"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden pb-4 space-y-2">
+            {navLinks.map((link) => (
+              <Link key={link.name} to={link.path} onClick={() => setIsOpen(false)}>
+                <Button variant="ghost" className="w-full justify-start text-base">
+                  {link.name}
+                </Button>
+              </Link>
+            ))}
+            <a
+              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mt-2"
+            >
+              <Button variant="cta" className="w-full">
+                Get Started
+              </Button>
+            </a>
+          </div>
+        )}
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
