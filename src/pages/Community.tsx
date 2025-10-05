@@ -38,7 +38,7 @@ const Community = () => {
                       <CardTitle className="text-xl mb-2">{feature.title}</CardTitle>
                       <CardDescription className="text-base mb-4">{feature.description}</CardDescription>
                       <a
-                        href="https://wa.me/919959100901?text=Hello!%20I%20would%20like%20to%20share%20my%20AI%20work%20on%20WisdomCore.ai."
+                        href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20I%20want%20to%20share%20my%20work%0A6.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -84,7 +84,7 @@ const Community = () => {
               Start publishing your work, collaborating with others, and building your AI portfolio today
             </p>
             <a
-              href="https://wa.me/919959100901?text=Hello!%20I%20would%20like%20to%20join%20the%20WisdomCore.ai%20community."
+              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20I%20want%20to%20share%20my%20work%0A6.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
               target="_blank"
               rel="noopener noreferrer"
             >

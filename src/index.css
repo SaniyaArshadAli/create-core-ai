@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* WisdomCore.ai Brand Colors - Teal Palette */
+    /* AL-AqCore.ai Brand Colors - Teal Palette */
     --background: 184 50% 92%;
     --foreground: 180 62% 25%;
 
@@ -50,12 +50,12 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(180 62% 25%), hsl(181 61% 42%));
     --gradient-accent: linear-gradient(135deg, hsl(181 61% 42%), hsl(182 56% 63%));
-    --gradient-light: linear-gradient(180deg, hsl(184 56% 85%), hsl(180 25% 97%));
+    --gradient-light: linear-gradient(180deg, hsl(184 56% 85% / 0.5), hsl(180 25% 97%));
     
     /* Shadows */
     --shadow-sm: 0 2px 8px hsla(180, 62%, 25%, 0.08);
     --shadow-md: 0 4px 16px hsla(180, 62%, 25%, 0.12);
-    --shadow-lg: 0 8px 32px hsla(180, 62%, 25%, 0.16);
+    --shadow-lg: 0 12px 40px hsla(180, 62%, 25%, 0.20);
     
     /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -128,5 +128,35 @@ All colors MUST be HSL.
   
   .transition-smooth {
     transition: var(--transition);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

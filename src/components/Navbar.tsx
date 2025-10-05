@@ -21,9 +21,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="WisdomCore.ai" className="h-10 w-10" />
+            <img src={logo} alt="AL-AqCore.ai" className="h-10 w-10" />
             <span className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
-              WisdomCore.ai
+              AL-AqCore.ai
             </span>
           </Link>
 
@@ -37,7 +37,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
+              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20I%20want%20to%20share%20my%20work%0A6.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +67,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
+              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20I%20want%20to%20share%20my%20work%0A6.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
               target="_blank"
               rel="noopener noreferrer"
               className="block mt-2"

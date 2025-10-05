@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: "NLP Sentiment Analyzer",
       description: "Complete sentiment analysis system with BERT implementation, training scripts, and deployment guide.",
-      price: "$49",
+      price: "₹4,100",
       level: "Intermediate",
       category: "NLP",
       features: ["BERT Model", "Training Scripts", "REST API", "Docker Setup"],
@@ -17,7 +17,7 @@ const Projects = () => {
     {
       title: "Computer Vision Object Detector",
       description: "YOLOv8-based object detection with custom dataset training and real-time inference code.",
-      price: "$59",
+      price: "₹4,950",
       level: "Advanced",
       category: "Computer Vision",
       features: ["YOLOv8", "Custom Training", "Real-time Detection", "Model Export"],
@@ -25,7 +25,7 @@ const Projects = () => {
     {
       title: "Recommendation System",
       description: "Collaborative filtering recommendation engine with user-item matrix and deployment setup.",
-      price: "$39",
+      price: "₹3,270",
       level: "Beginner",
       category: "ML",
       features: ["Collaborative Filtering", "Matrix Factorization", "Flask API", "Database Schema"],
@@ -33,7 +33,7 @@ const Projects = () => {
     {
       title: "Chatbot with RAG",
       description: "Retrieval-Augmented Generation chatbot using LangChain and vector databases.",
-      price: "$69",
+      price: "₹5,780",
       level: "Advanced",
       category: "GenAI",
       features: ["LangChain", "Vector DB", "Context Retrieval", "Deployment Guide"],
@@ -41,7 +41,7 @@ const Projects = () => {
     {
       title: "Image Classification CNN",
       description: "Convolutional neural network for image classification with transfer learning options.",
-      price: "$35",
+      price: "₹2,930",
       level: "Beginner",
       category: "Computer Vision",
       features: ["CNN Architecture", "Transfer Learning", "Data Augmentation", "Model Evaluation"],
@@ -49,7 +49,7 @@ const Projects = () => {
     {
       title: "Time Series Forecasting",
       description: "LSTM-based time series prediction with feature engineering and visualization.",
-      price: "$45",
+      price: "₹3,770",
       level: "Intermediate",
       category: "ML",
       features: ["LSTM Model", "Feature Engineering", "Visualizations", "Model Comparison"],

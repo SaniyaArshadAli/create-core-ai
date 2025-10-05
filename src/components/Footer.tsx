@@ -10,8 +10,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img src={logo} alt="WisdomCore.ai" className="h-10 w-10" />
-              <span className="text-xl font-bold text-white">WisdomCore.ai</span>
+              <img src={logo} alt="AL-AqCore.ai" className="h-10 w-10" />
+              <span className="text-xl font-bold text-white">AL-AqCore.ai</span>
             </div>
             <p className="text-primary-foreground/80 text-sm">
               Where AI Knowledge Meets Action. Your one-stop hub for AI learning, projects, and services.
@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="#" className="hover:text-hover transition-smooth">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="hover:text-hover transition-smooth">
+              <a href="https://github.com/AL-Aql-Ai" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition-smooth">
                 <Github size={20} />
               </a>
             </div>
@@ -87,7 +87,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:contact@wisdomcore.ai"
+                  href="mailto:contact.alaql.ai@gmail.com"
                   className="flex items-center space-x-2 hover:text-hover transition-smooth"
                 >
                   <Mail size={16} />
@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/80">
-          <p>&copy; {new Date().getFullYear()} WisdomCore.ai. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AL-AqCore.ai. All rights reserved.</p>
           <div className="mt-2 space-x-4">
             <Link to="/privacy" className="hover:text-hover transition-smooth">
               Privacy Policy

@@ -16,7 +16,7 @@ const Services = () => {
         "Model optimization & tuning",
         "Production deployment support",
       ],
-      pricing: "Starting at $500",
+      pricing: "Starting at ₹42,000",
     },
     {
       icon: <Brain className="w-12 h-12 text-accent" />,
@@ -28,7 +28,7 @@ const Services = () => {
         "Implementation roadmap",
         "Best practices guidance",
       ],
-      pricing: "From $200/session",
+      pricing: "From ₹16,800/session",
     },
     {
       icon: <GraduationCap className="w-12 h-12 text-accent" />,
@@ -40,7 +40,7 @@ const Services = () => {
         "Implementation guidance",
         "Documentation help",
       ],
-      pricing: "Starting at $50",
+      pricing: "Starting at ₹4,200",
     },
     {
       icon: <Lightbulb className="w-12 h-12 text-accent" />,
@@ -52,7 +52,7 @@ const Services = () => {
         "Dataset recommendations",
         "Reference materials",
       ],
-      pricing: "From $30/idea",
+      pricing: "From ₹2,500/idea",
     },
   ];
 
@@ -119,7 +119,7 @@ const Services = () => {
               Not Sure Which Service You Need?
             </h2>
             <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
-              Contact us for a free consultation, and we'll help you choose the right solution
+              Contact us for a free consultation, and we'll help you choose the right solution. We also provide 1-hour foundational AI basics sessions with all services.
             </p>
             <a
               href="https://wa.me/919959100901?text=Hello!%20I%20would%20like%20to%20discuss%20my%20AI%20project%20needs."

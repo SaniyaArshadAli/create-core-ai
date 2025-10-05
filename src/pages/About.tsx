@@ -31,7 +31,7 @@ const About = () => {
         {/* Header */}
         <section className="gradient-light py-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">About WisdomCore.ai</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold mb-4">About AL-AqCore.ai</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Where AI Knowledge Meets Action
             </p>
@@ -44,7 +44,7 @@ const About = () => {
             <div className="prose prose-lg mx-auto">
               <h2 className="text-3xl font-bold mb-6 text-primary">Our Story</h2>
               <p className="text-muted-foreground mb-4">
-                WisdomCore.ai was founded with a simple yet powerful vision: to create a comprehensive platform where AI knowledge, 
+                AL-AqCore.ai was founded with a simple yet powerful vision: to create a comprehensive platform where AI knowledge, 
                 practical implementation, and community collaboration come together seamlessly.
               </p>
               <p className="text-muted-foreground mb-4">
@@ -53,7 +53,7 @@ const About = () => {
                 professional AI services, and a thriving community all in one place.
               </p>
               <p className="text-muted-foreground">
-                Today, WisdomCore.ai serves students, professionals, and organizations looking to leverage AI technology. Whether 
+                Today, AL-AqCore.ai serves students, professionals, and organizations looking to leverage AI technology. Whether 
                 you're learning the basics, building your first project, or scaling AI solutions for your business, we're here to 
                 support your journey every step of the way.
               </p>
@@ -88,10 +88,10 @@ const About = () => {
               Ready to Start Your AI Journey?
             </h2>
             <p className="text-lg text-white/90 mb-6 max-w-2xl mx-auto">
-              Join thousands of learners and professionals who trust WisdomCore.ai for their AI education and project needs
+              Join thousands of learners and professionals who trust AL-AqCore.ai for their AI education and project needs
             </p>
             <a
-              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20WisdomCore.ai."
+              href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20I%20want%20to%20share%20my%20work%0A6.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
               target="_blank"
               rel="noopener noreferrer"
             >
