@@ -7,7 +7,7 @@ const ServicesSnapshot = () => {
     {
       icon: <Code className="w-10 h-10 text-accent" />,
       title: "Custom ML Model Development",
-      description: "Build tailored machine learning solutions for your specific business needs.",
+      description: "Build customized machine learning solutions for your specific business needs.",
     },
     {
       icon: <Brain className="w-10 h-10 text-accent" />,

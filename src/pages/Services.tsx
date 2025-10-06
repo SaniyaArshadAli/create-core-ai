@@ -9,7 +9,7 @@ const Services = () => {
     {
       icon: <Code className="w-12 h-12 text-accent" />,
       title: "Custom ML Model Development",
-      description: "We build tailored machine learning solutions that fit your specific business needs and use cases.",
+      description: "We build customized machine learning solutions that fit your specific business needs and use cases.",
       features: [
         "End-to-end model development",
         "Custom architecture design",
@@ -66,7 +66,7 @@ const Services = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">Professional AI Services</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              From consulting to complete project delivery, we provide expert AI/ML services tailored to your needs
+              From consulting to complete project delivery, we provide expert AI/ML services customized to your needs
             </p>
           </div>
         </section>

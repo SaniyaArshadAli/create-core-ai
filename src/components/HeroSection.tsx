@@ -23,7 +23,7 @@ const HeroSection = () => {
           Projects & Services
         </h1>
         <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-          Where AI Knowledge Meets Action. Read. Build. Collaborate. Monetize.
+          Where AI Knowledge Meets Action. Read. Build. Collaborate. Innovate.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/projects">

@@ -25,7 +25,7 @@ const HighlightsSection = () => {
     {
       icon: <Users className="w-12 h-12 text-accent" />,
       title: "Community",
-      description: "Publish your work, collaborate with others, and grow together in our thriving AI community.",
+      description: "Publish your work, collaborate with others, and grow together in our vibrant AI community.",
       link: "/community",
     },
   ];

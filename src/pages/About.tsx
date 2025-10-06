@@ -51,7 +51,7 @@ const About = () => {
               <p className="text-muted-foreground mb-4">
                 We recognized a gap in the AI ecosystem - while there was plenty of scattered information and isolated services, 
                 there wasn't a unified platform that combined high-quality educational content, ready-to-use project packages, 
-                professional AI services, and a thriving community all in one place.
+                professional AI services, and a dynamic community all in one place.
               </p>
               <p className="text-muted-foreground">
                 Today, AL-AqCore.ai serves students, professionals, and organizations looking to leverage AI technology. Whether 

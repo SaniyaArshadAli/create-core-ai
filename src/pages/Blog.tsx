@@ -1,49 +1,13 @@
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, User, Clock } from "lucide-react";
+import { getAllBlogPosts } from "@/lib/blogContent";
 
 const Blog = () => {
-  const articles = [
-    {
-      title: "STTV Decoder-Encoder Explained: The AI Powering Next-Gen Image Manipulation",
-      description: "Discover how STTV Decoder-Encoders use 'image to noise transfer' to revolutionize AI tasks like image denoising, super-resolution, and style transfer.",
-      author: "AL-AqCore Team",
-      date: "Jan 18, 2025",
-      category: "Computer Vision",
-      readTime: "10 min read",
-      slug: "sttv-decoder-encoder-image-to-noise-transfer-ai",
-    },
-    {
-      title: "Liquid Neural Networks: The Brain-Inspired AI That's Adaptable and Efficient",
-      description: "Explore Liquid Neural Networks (LNNs), the adaptive AI inspired by the brain. Learn how they process time-series data and their real-world applications.",
-      author: "AL-AqCore Team",
-      date: "Jan 16, 2025",
-      category: "Neural Networks",
-      readTime: "12 min read",
-      slug: "liquid-neural-networks-adaptive-ai",
-    },
-    {
-      title: "Hierarchical Reasoning: How AI Learns to Think in Layers to Solve Complex Problems",
-      description: "Discover Hierarchical Reasoning Models, the AI framework that breaks down complex tasks into manageable sub-goals for advanced problem-solving.",
-      author: "AL-AqCore Team",
-      date: "Jan 14, 2025",
-      category: "AI Architecture",
-      readTime: "11 min read",
-      slug: "hierarchical-reasoning-ai-model",
-    },
-    {
-      title: "PhP, ReAct, MoT, ToT: Master Advanced LLM Prompting for Complex Reasoning",
-      description: "Unlock the full potential of large language models with advanced prompting techniques like ReAct, Tree of Thought (ToT), and Multi-Tool Use (MoT).",
-      author: "AL-AqCore Team",
-      date: "Jan 12, 2025",
-      category: "LLM & Prompting",
-      readTime: "15 min read",
-      slug: "advanced-llm-prompting-react-tot",
-    },
-  ];
-
+  const articles = getAllBlogPosts();
   const categories = ["All", "Computer Vision", "Neural Networks", "AI Architecture", "LLM & Prompting"];
 
   return (
@@ -56,7 +20,7 @@ const Blog = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">AI Blog & Research</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore cutting-edge tutorials, in-depth articles, and simplified research summaries from our expert team
+              Explore advanced guides, in-depth articles, and simplified research summaries from our expert team
             </p>
           </div>
         </section>
@@ -79,35 +43,37 @@ const Blog = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {articles.map((article, index) => (
-                <Card key={index} className="hover:shadow-lg transition-smooth cursor-pointer border-2 hover:border-accent h-full flex flex-col">
-                  <CardHeader className="flex-1">
-                    <div className="flex justify-between items-start mb-3">
-                      <Badge variant="outline" className="text-xs">{article.category}</Badge>
-                      <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                        <Clock size={14} />
-                        <span className="text-xs">{article.readTime}</span>
+                <Link key={index} to={`/blog/${article.slug}`} className="group">
+                  <Card className="hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-accent h-full flex flex-col hover-scale">
+                    <CardHeader className="flex-1">
+                      <div className="flex justify-between items-start mb-3">
+                        <Badge variant="outline" className="text-xs">{article.category}</Badge>
+                        <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                          <Clock size={14} />
+                          <span className="text-xs">{article.readTime}</span>
+                        </div>
                       </div>
-                    </div>
-                    <CardTitle className="text-2xl hover:text-accent transition-smooth mb-3">
-                      {article.title}
-                    </CardTitle>
-                    <CardDescription className="text-base leading-relaxed">
-                      {article.description}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    <div className="flex items-center justify-between text-sm text-muted-foreground pt-4 border-t">
-                      <div className="flex items-center gap-2">
-                        <User size={16} />
-                        <span className="font-medium">{article.author}</span>
+                      <CardTitle className="text-2xl group-hover:text-accent transition-smooth mb-3">
+                        {article.title}
+                      </CardTitle>
+                      <CardDescription className="text-base leading-relaxed">
+                        {article.description}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent className="pt-0">
+                      <div className="flex items-center justify-between text-sm text-muted-foreground pt-4 border-t">
+                        <div className="flex items-center gap-2">
+                          <User size={16} />
+                          <span className="font-medium">{article.author}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Calendar size={16} />
+                          <span>{article.date}</span>
+                        </div>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar size={16} />
-                        <span>{article.date}</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </div>

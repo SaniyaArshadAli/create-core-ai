@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, MessageCircle, Facebook, Twitter, Linkedin, Github } from "lucide-react";
+import { Mail, MessageCircle, Github } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -13,20 +13,18 @@ const Footer = () => {
               <img src={logo} alt="AL-AqCore.ai" className="h-10 w-10" />
               <span className="text-xl font-bold text-white">AL-AqCore.ai</span>
             </div>
-            <p className="text-primary-foreground/80 text-sm">
+            <p className="text-primary-foreground/80 text-sm mb-3">
               Where AI Knowledge Meets Action. Your one-stop hub for AI learning, projects, and services.
             </p>
+            <a
+              href="mailto:contact.alaql.ai@gmail.com"
+              className="flex items-center space-x-2 text-white hover:text-hover transition-smooth mb-4 text-sm font-medium"
+            >
+              <Mail size={18} />
+              <span>contact.alaql.ai@gmail.com</span>
+            </a>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-hover transition-smooth">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="hover:text-hover transition-smooth">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="hover:text-hover transition-smooth">
-                <Linkedin size={20} />
-              </a>
-              <a href="https://github.com/AL-Aql-Ai" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition-smooth">
+              <a href="https://github.com/AL-Aql-Ai" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition-smooth" aria-label="GitHub">
                 <Github size={20} />
               </a>
             </div>
@@ -70,7 +68,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact & Work With Us */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Get in Touch</h3>
             <ul className="space-y-3 text-sm">
@@ -91,7 +89,17 @@ const Footer = () => {
                   className="flex items-center space-x-2 hover:text-hover transition-smooth"
                 >
                   <Mail size={16} />
-                  <span>Email Us</span>
+                  <span>contact.alaql.ai@gmail.com</span>
+                </a>
+              </li>
+              <li className="pt-2">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSd3uhmOgHXaNW0-mobZ53QdGokB0tOpL87w94DYb-4vab_d4w/viewform?usp=header"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-accent text-accent-foreground px-4 py-2 rounded-md text-sm font-semibold hover:bg-hover transition-smooth"
+                >
+                  Work With Us
                 </a>
               </li>
             </ul>

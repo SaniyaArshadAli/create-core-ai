@@ -138,6 +138,18 @@ All colors MUST be HSL.
     animation: slideUp 0.6s ease-out;
   }
 
+  .animate-slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -153,6 +165,17 @@ All colors MUST be HSL.
     from {
       opacity: 0;
       transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
     }
     to {
       opacity: 1;
