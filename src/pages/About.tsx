@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactForm from "@/components/ContactForm";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Target, Zap, Heart } from "lucide-react";
@@ -78,6 +79,13 @@ const About = () => {
                 </Card>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* Contact Form */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-2xl">
+            <ContactForm />
           </div>
         </section>
 

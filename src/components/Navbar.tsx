@@ -1,11 +1,27 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { Menu, X, LogOut, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { isAuthenticated, getCurrentUser, logoutUser } from "@/lib/googleSheets";
+import { useToast } from "@/hooks/use-toast";
 import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const { toast } = useToast();
+  const isLoggedIn = isAuthenticated();
+  const currentUser = getCurrentUser();
+
+  const handleLogout = () => {
+    logoutUser();
+    toast({
+      title: "Logged out",
+      description: "You have been successfully logged out.",
+    });
+    navigate("/");
+    window.location.reload();
+  };
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -45,6 +61,22 @@ const Navbar = () => {
                 Get Started
               </Button>
             </a>
+            {isLoggedIn ? (
+              <div className="flex items-center gap-3 ml-4">
+                <span className="text-sm text-muted-foreground flex items-center gap-2">
+                  <User className="w-4 h-4" />
+                  {currentUser?.name}
+                </span>
+                <Button variant="outline" size="sm" onClick={handleLogout}>
+                  <LogOut className="w-4 h-4 mr-2" />
+                  Logout
+                </Button>
+              </div>
+            ) : (
+              <Link to="/login" className="ml-4">
+                <Button variant="outline" size="sm">Login</Button>
+              </Link>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,6 +108,22 @@ const Navbar = () => {
                 Get Started
               </Button>
             </a>
+            {isLoggedIn ? (
+              <>
+                <div className="flex items-center gap-2 px-4 py-2 text-sm text-muted-foreground">
+                  <User className="w-4 h-4" />
+                  {currentUser?.name}
+                </div>
+                <Button variant="outline" onClick={() => { handleLogout(); setIsOpen(false); }} className="w-full">
+                  <LogOut className="w-4 h-4 mr-2" />
+                  Logout
+                </Button>
+              </>
+            ) : (
+              <Link to="/login" onClick={() => setIsOpen(false)}>
+                <Button variant="outline" className="w-full">Login</Button>
+              </Link>
+            )}
           </div>
         )}
       </div>
