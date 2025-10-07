@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CollaborationBoard from "@/components/CollaborationBoard";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PenTool } from "lucide-react";
@@ -26,33 +27,8 @@ const Community = () => {
           </div>
         </section>
 
-        {/* Feature */}
-        <section className="py-12">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl mx-auto">
-              <Card className="shadow-smooth hover:shadow-lg transition-smooth border-2 hover:border-accent">
-                <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-secondary rounded-lg">{feature.icon}</div>
-                    <div className="flex-1">
-                      <CardTitle className="text-xl mb-2">{feature.title}</CardTitle>
-                      <CardDescription className="text-base mb-4">{feature.description}</CardDescription>
-                      <a
-                        href="https://wa.me/919959100901?text=Hello!%20I%20am%20interested%20in%20your%20AI%20Hub%20services.%0A%0A1.%20Buy%20a%20Pre-made%20Project%0A2.%20Mentor%20Me%20%E2%80%93%20Assistance%20and%20guidance%20from%20idea%20to%20implementation%0A3.%20Custom%20ML%20Model%20Development%0A4.%20Idea%20Generation%20Service%0A5.%20I%20want%20to%20share%20my%20work%0A6.%20General%20Query%0A%0APlease%20select%20a%20number%20from%20the%20above%20options."
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button variant="cta" className="w-full sm:w-auto">
-                          Get Started
-                        </Button>
-                      </a>
-                    </div>
-                  </div>
-                </CardHeader>
-              </Card>
-            </div>
-          </div>
-        </section>
+        {/* Collaboration Board */}
+        <CollaborationBoard />
 
         {/* Stats Section */}
         <section className="py-16 bg-secondary/30">
