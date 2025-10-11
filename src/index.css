@@ -47,10 +47,19 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
+    /* Silver/Grey Accent Colors */
+    --silver: 200 15% 75%;
+    --silver-foreground: 200 20% 20%;
+    --silver-light: 200 10% 88%;
+    --silver-dark: 200 20% 45%;
+    --grey-accent: 210 12% 65%;
+    --grey-muted: 210 10% 82%;
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(180 62% 25%), hsl(181 61% 42%));
     --gradient-accent: linear-gradient(135deg, hsl(181 61% 42%), hsl(182 56% 63%));
     --gradient-light: linear-gradient(180deg, hsl(184 56% 85% / 0.5), hsl(180 25% 97%));
+    --gradient-silver: linear-gradient(135deg, hsl(200 15% 75%), hsl(210 12% 65%));
     
     /* Shadows */
     --shadow-sm: 0 2px 8px hsla(180, 62%, 25%, 0.08);
@@ -121,9 +130,17 @@ All colors MUST be HSL.
   .gradient-light {
     background: var(--gradient-light);
   }
+
+  .gradient-silver {
+    background: var(--gradient-silver);
+  }
   
   .shadow-smooth {
     box-shadow: var(--shadow-md);
+  }
+
+  .shadow-silver {
+    box-shadow: 0 8px 24px hsla(200, 15%, 75%, 0.15);
   }
   
   .transition-smooth {

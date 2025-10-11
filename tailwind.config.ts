@@ -51,6 +51,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        silver: {
+          DEFAULT: "hsl(var(--silver))",
+          foreground: "hsl(var(--silver-foreground))",
+          light: "hsl(var(--silver-light))",
+          dark: "hsl(var(--silver-dark))",
+        },
+        grey: {
+          accent: "hsl(var(--grey-accent))",
+          muted: "hsl(var(--grey-muted))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

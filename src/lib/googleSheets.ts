@@ -1,6 +1,6 @@
 // Google Sheets Integration
-// Replace with your deployed Google Apps Script web app URL
-const GOOGLE_SCRIPT_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL_HERE';
+// Deployed Google Apps Script web app URL
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6LaqUr-6g9dCEl1NyUkcDuXbl2y-k8ehwpjJQoeeMHB8_xaSfqshYS3lzVJuvpgS9qg/exec';
 
 export interface FormData {
   [key: string]: string | number;
