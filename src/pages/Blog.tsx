@@ -16,8 +16,9 @@ const Blog = () => {
       
       <main className="flex-1">
         {/* Header */}
-        <section className="gradient-light py-16">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="gradient-light py-16 relative">
+          <div className="absolute inset-0 bg-gradient-silver opacity-5"></div>
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h1 className="text-4xl sm:text-5xl font-bold mb-4">AI Blog & Research</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Explore advanced guides, in-depth articles, and simplified research summaries from our expert team
@@ -26,7 +27,7 @@ const Blog = () => {
         </section>
 
         {/* Categories */}
-        <section className="py-8 bg-background border-b">
+        <section className="py-8 bg-background border-b border-silver/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-wrap gap-2 justify-center">
               {categories.map((category) => (
@@ -44,7 +45,7 @@ const Blog = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {articles.map((article, index) => (
                 <Link key={index} to={`/blog/${article.slug}`} className="group">
-                  <Card className="hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-accent h-full flex flex-col hover-scale">
+                  <Card className="hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-accent h-full flex flex-col hover-scale shadow-silver">
                     <CardHeader className="flex-1">
                       <div className="flex justify-between items-start mb-3">
                         <Badge variant="outline" className="text-xs">{article.category}</Badge>
