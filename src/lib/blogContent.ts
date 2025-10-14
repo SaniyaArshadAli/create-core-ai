@@ -281,10 +281,10 @@ The journey from simple questioning to structured prompting with ReAct, ToT, and
   {
     slug: "large-language-models-explained",
     title: "Large Language Models: A Deep Dive into GPT and Beyond",
-    excerpt: "Explore the architecture, training, and capabilities of modern LLMs like GPT-4, Claude, and LLaMA.",
+    description: "Explore the architecture, training, and capabilities of modern LLMs like GPT-4, Claude, and LLaMA.",
     author: "Dr. Sarah Chen",
     date: "2025-01-15",
-    tags: ["LLM", "GPT", "Deep Learning", "NLP"],
+    category: "LLM",
     readTime: "10 min",
     content: `
 # Large Language Models: A Deep Dive into GPT and Beyond
@@ -370,10 +370,10 @@ Understanding LLMs is crucial for anyone working in technology, as they are beco
   {
     slug: "ai-agents-autonomous-systems",
     title: "AI Agents and Autonomous Systems: The Next Frontier",
-    excerpt: "Discover how AI agents are evolving from simple chatbots to autonomous systems capable of complex decision-making.",
+    description: "Discover how AI agents are evolving from simple chatbots to autonomous systems capable of complex decision-making.",
     author: "Michael Torres",
     date: "2025-01-10",
-    tags: ["AI Agents", "Autonomous Systems", "AGI", "Automation"],
+    category: "AI Agents",
     readTime: "9 min",
     content: `
 # AI Agents and Autonomous Systems: The Next Frontier
@@ -504,10 +504,10 @@ The key is developing these systems responsibly, with appropriate safeguards and
   {
     slug: "generative-ai-creative-industries",
     title: "Generative AI's Impact on Creative Industries",
-    excerpt: "How AI tools like DALL-E, Midjourney, and Stable Diffusion are transforming art, design, and content creation.",
+    description: "How AI tools like DALL-E, Midjourney, and Stable Diffusion are transforming art, design, and content creation.",
     author: "Emma Richardson",
     date: "2025-01-05",
-    tags: ["Generative AI", "Creative AI", "Art", "Design"],
+    category: "Generative AI",
     readTime: "8 min",
     content: `
 # Generative AI's Impact on Creative Industries
@@ -665,10 +665,10 @@ The future belongs to creators who can harness AI's power while bringing human i
   {
     slug: "ai-safety-alignment-challenges",
     title: "AI Safety and Alignment: Critical Challenges Ahead",
-    excerpt: "Examining the crucial issues of ensuring AI systems remain safe, beneficial, and aligned with human values.",
+    description: "Examining the crucial issues of ensuring AI systems remain safe, beneficial, and aligned with human values.",
     author: "Dr. James Kumar",
     date: "2024-12-28",
-    tags: ["AI Safety", "Alignment", "Ethics", "Responsible AI"],
+    category: "AI Safety",
     readTime: "12 min",
     content: `
 # AI Safety and Alignment: Critical Challenges Ahead
@@ -862,10 +862,10 @@ The future of AI - and perhaps humanity itself - depends on getting alignment ri
   {
     slug: "multimodal-ai-future-of-interaction",
     title: "Multimodal AI: The Future of Human-Computer Interaction",
-    excerpt: "Exploring how AI systems that understand text, images, audio, and video are creating more natural interfaces.",
+    description: "Exploring how AI systems that understand text, images, audio, and video are creating more natural interfaces.",
     author: "Lisa Zhang",
     date: "2024-12-20",
-    tags: ["Multimodal AI", "HCI", "Computer Vision", "NLP"],
+    category: "Multimodal AI",
     readTime: "9 min",
     content: `
 # Multimodal AI: The Future of Human-Computer Interaction
@@ -1064,10 +1064,10 @@ The key is developing these systems responsibly, ensuring they're accessible, fa
   {
     slug: "retrieval-augmented-generation-rag",
     title: "Retrieval-Augmented Generation (RAG): Making AI More Knowledgeable",
-    excerpt: "Learn how RAG systems combine language models with external knowledge bases for more accurate and up-to-date responses.",
+    description: "Learn how RAG systems combine language models with external knowledge bases for more accurate and up-to-date responses.",
     author: "Alex Martinez",
     date: "2024-12-15",
-    tags: ["RAG", "LLM", "Knowledge Retrieval", "NLP"],
+    category: "RAG",
     readTime: "10 min",
     content: `
 # Retrieval-Augmented Generation (RAG): Making AI More Knowledgeable
