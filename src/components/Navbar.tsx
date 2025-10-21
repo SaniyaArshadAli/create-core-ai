@@ -28,6 +28,8 @@ const Navbar = () => {
     { name: "Blog", path: "/blog" },
     { name: "Projects", path: "/projects" },
     { name: "Project Ideas", path: "/project-ideas" },
+    { name: "AI PPTs", path: "/ai-presentations" },
+    { name: "Collaboration", path: "/collaboration" },
     { name: "Services", path: "/services" },
     { name: "Community", path: "/community" },
     { name: "About", path: "/about" },

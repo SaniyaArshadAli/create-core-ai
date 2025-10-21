@@ -13,6 +13,8 @@ import Community from "./pages/Community";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import AIPresentations from "./pages/AIPresentations";
+import Collaboration from "./pages/Collaboration";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +32,8 @@ const App = () => (
           <Route path="/project-ideas" element={<ProjectIdeas />} />
           <Route path="/services" element={<Services />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/ai-presentations" element={<AIPresentations />} />
+          <Route path="/collaboration" element={<Collaboration />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
